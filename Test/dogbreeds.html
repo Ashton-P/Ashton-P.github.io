@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
 <!--webpage of our favorite dog breeds and information on them to show our love for them :)-->
     <title>HTML webpage of dog breeds</title>
+    <!--embedded style sheet (maya)-->
+    <style>
+      /*using id span to add color to text (maya)*/
+      #span{
+        color:#FF4500;
+      }
+      /*adding background color, margin and padding values, and font style to corgi div (maya)*/
+      .corgi{
+        background-color:beige;
+        margin:70px;
+        padding:20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      /*adding font-style, border properties, and alignment to table (maya)*/
+      #table{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid black 2px;
+        text-align: center;
+      }
+      /*creating opacity effect when hovering image (maya)*/
+      #img:hover{
+        opacity:70%;
+      }
+      /*adjusting margin for paragraph (maya)*/
+      #para{
+        margin:50px;
+      }
+      /*adjusting padding for title (maya)*/
+      #h2{
+        padding:20px;
+      }
+
+    </style>
     </head>  
     <body> <!--Mark's comment: Try to never overlap tags. You have a beginning center tag and then a div tag and then you close the center before closing the div. Don't do that. Move this center tag to after line 10. BUT ALSO, the center tag has been deprecated for like over 20 years. You shouldn't be using it anymore once we get to CSS.-->
 <!--div for corgi dog breed (maya)-->
 <div class="corgi">
 <center> <!-- Moved center tag (Ashton)-->
 <!--header to name dog breed (maya)-->    
-    <h2>Pembroke Welsh Corgi</h2>
+    <h2 id="h2">Pembroke Welsh Corgi</h2>
 <!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
-    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" width="50%"></a>
+    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="img" width="50%"></a>
 <!--paragraph description of corgi (maya)-->   
-    <p>Corgis are <span>affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
+    <p id="para">Corgis are <span id="span">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
         They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
         tan, and white. </p> </center>
 <!--list of traits, source:https://www.akc.org/dog-breeds/pembroke-welsh-corgi/ (maya)-->
@@ -41,7 +74,7 @@
     <center>
     <!--table of info on how to care for corgis (maya)-->
     <h2>Corgi Care</h2>
-    <table>
+    <table id="table">
         <tr>
           <th>Health</th>
           <th>Grooming</th>
