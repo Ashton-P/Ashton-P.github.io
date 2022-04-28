@@ -58,86 +58,142 @@
 
 
 
-
-
-<!--Mark's comment: Each .html page should only have one <head> and one <body> tag, so delete all of these extra body tags, making sure you start at the beginning of the visible code and end at the bottom.-->
-    <h2>Dobermans</h2>
-    <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102805/Doberman-Pinscher_Featured-Image-1024x615.jpg" alt="Big dog" title="Cute Doggo!" width="50%"> <!--Mark's comment: Wow, look at that url for the image. It works, but, generally, you want to stay away from super long, overly complicated urls since they're usually there as trackers or they're the result of a database call that might not work in the future. Better to find a more simple image source or to save the image and put it in the repository and reference that file instead.-->
-<p>The Dobermann or also known as the Doberman Pinscher is a medium to large sized dog that was discovered 
-by german a tax collector Louis Dobermann in the 1890s. Dobermans are both sleek and powerful, possessing 
-keen intelligence and a striking physique.They are considered to be royalty in the canaine communtiy and 
-are among the finest protection dogs.They are known to be intellegent, alert and extremely loyal.</p>
-
+    <style>
+        p.center {
+            text-align: center;
+            color: rgb(10, 78, 145);
+        }
+        p.large{ 
+        font-size: 200%;
+        }
+body{ 
+    background-color:lightblue;
+}
+ #Subtitle {
+     background-color: darkseagreen;
+ }
+ .myDiv {
+  border: 5px outset darkblue;
+  background-color: darkseagreen;    
+  text-align: center;
+}
+a:hover {
+  background-color: pink;
+}
+h2.b {
+  visibility: hidden;
+}
+a {
+  color: seagreen;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  text-align: center;
+}
+        </style> 
+   
+   
+    <body>
+        
+       <div class="center"><h2>Dobermans
+            <link rel="stylesheet" href="Style.css">
+        </h2></div>
+        <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102805/Doberman-Pinscher_Featured-Image-1024x615.jpg" alt="Big dog" title="Cute Doggo!" width="50%">
+<p class="center"><strong>The Dobermann or also known as the Doberman Pinscher is a medium to large sized dog that was discovered 
+    by german a tax collector Louis Dobermann in the 1890s. Dobermans are both sleek and powerful, possessing 
+    keen intelligence and a striking physique.They are considered to be royalty in the canaine communtiy and 
+    are among the finest protection dogs.They are known to be intellegent, alert and extremely loyal.</strong></p>
+    <div class="myDiv">
 <span><strong> Size and Porportions</strong></span>
 <p>The size of the breeds varies through kennles and breeding clubs,but according to standards males
-are approximately <em> 68 to 72 centimenters(27-28 inch)</em> at the withers. According females standards 
-should be around<em> 63 to 68 centimenters(25-27 inchs).</em>This dog has a more square frame so the length should 
+    are approximately <em> 68 to 72 centimenters(27-28 inch)</em> at the withers. According females standards 
+    should be around<em> 63 to 68 centimenters(25-27 inchs).</em>This dog has a more square frame so the length should 
 equal the height. The length of head, neck and legs should be porportionate to the body.</p>
-
+    </div>
 
 <strong>Weight</strong>
-<p>The ideal weight for male dogs is around 88-99 pounds and for females the ideal weight is around 71-77 pounds.</p>
-<!--Wanted the weight of the dog to be seperate from the other porportions it made it look neater(maham)-->
+<p id="Subtitle">The ideal weight for male dogs is around 88-99 pounds and for females the ideal weight is around 71-77 pounds.</p>
+
+<h2 class="b">Fun Fact: Dobermans were the first canine war heroes</h2>
 
 <strong>Colors</strong>
 <ul>
-<li>Black</li>
-<li>Blue</li>
-<li>Red</li>
-<li>Fawn</li>
+    <li>Black</li>
+    <li>Blue</li>
+    <li>Red</li>
+    <li>Fawn</li>
 </ul>
+
 <strong>Characteristics</strong>
 <ol>
-<li>Alert</li>
-<li>Confident</li>
-<li>Loyal</li>
-<li>Energetic</li>
-<li>Fearless</li>
-<li>Obidient</li>
-<li>Intelligent</li>
+    <li>Alert</li>
+    <li>Confident</li>
+    <li>Loyal</li>
+    <li>Energetic</li>
+    <li>Fearless</li>
+    <li>Obidient</li>
+    <li>Intelligent</li>
 </ol>
 
 <style>
-table {
-    font-family:Arial, Helvetica, sans-serif;
-    border-collapse:collapse;
-    width: 100%;
+    table {
+        font-family:Arial, Helvetica, sans-serif;
+        border-collapse:collapse;
+        width: 100%;
 
-}
+ }
 
-tr:nth-child(even) {
-background-color: #dddddd;
+ tr:nth-child(even) {
+  background-color: #dddddd;
 }
 </style>
 <h2>Puppy Feeding Chart</h2>
 <table>
-<tr>
-    <!--The table looked a bit off so I added color(maham)-->
-    <th>Age</th>
-    <th>Male</th>
-    <th>Female</th> 
+    <tr>
+        <th>Age</th>
+        <th>Male</th>
+        <th>Female</th> 
+    </tr>
+    <tr>
+        <td><strong>2-3 months</strong></td>
+        <td>1 to 2.6 cups</td>
+        <td>.6 to 2.3 cups</td>
 </tr>
 <tr>
-    <td><strong>2-3 months</strong></td>
-    <td>1 to 2.6 cups</td>
-    <td>.6 to 2.3 cups</td>
+    <td><strong>4-5 months</strong></td>
+    <td>3 to 3.8 cups</td>
+    <td>1.5 to 4 cups</td>
 </tr>
 <tr>
-<td><strong>4-5 months</strong></td>
-<td>3 to 3.8 cups</td>
-<td>1.5 to 4 cups</td>
+    <td><strong>6-8 months</strong></td>
+    <td>3 to 6.3 cups</td>
+    <td>1.5 to 4 cups</td>
 </tr>
 <tr>
-<td><strong>6-8 months</strong></td>
-<td>3 to 6.3 cups</td>
-<td>1.5 to 4 cups</td>
-</tr>
-<tr>
-<td><strong>9-11 months</strong></td>
-<td>4 to 7 cups</td>
-<td>2.5 to 5 cups</td>
+    <td><strong>9-11 months</strong></td>
+    <td>4 to 7 cups</td>
+    <td>2.5 to 5 cups</td>
 </tr>
 </table>
+
+<p><b><a href="https://www.akc.org/dog-breeds/doberman-pinscher/" target="_blank">Learn more about Dobermans</a></b></p>
+
+
+
+
+
+
+    </body>
+
+
+
+
+ 
+
 
 
     
@@ -262,135 +318,5 @@ background-color: #dddddd;
       </center>
   </body>
 
-  <style>
-    p.center {
-        text-align: center;
-        color: rgb(10, 78, 145);
-    }
-    p.large{ 
-    font-size: 200%;
-    }
-body{ 
-background-color:lightblue;
-}
-#Subtitle {
- background-color: darkseagreen;
-}
-.myDiv {
-border: 5px outset darkblue;
-background-color: darkseagreen;    
-text-align: center;
-}
-a:hover {
-background-color: pink;
-}
-h2.b {
-visibility: hidden;
-}
-a {
-color: seagreen;
-}
-img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-.center {
-text-align: center;
-}
-    </style> 
-
-
-<body>
-    
-   <div class="center"><h2>Dobermans
-        <link rel="stylesheet" href="Style.css">
-    </h2></div>
-    <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102805/Doberman-Pinscher_Featured-Image-1024x615.jpg" alt="Big dog" title="Cute Doggo!" width="50%">
-<p class="center"><strong>The Dobermann or also known as the Doberman Pinscher is a medium to large sized dog that was discovered 
-by german a tax collector Louis Dobermann in the 1890s. Dobermans are both sleek and powerful, possessing 
-keen intelligence and a striking physique.They are considered to be royalty in the canaine communtiy and 
-are among the finest protection dogs.They are known to be intellegent, alert and extremely loyal.</strong></p>
-<div class="myDiv">
-<span><strong> Size and Porportions</strong></span>
-<p>The size of the breeds varies through kennles and breeding clubs,but according to standards males
-are approximately <em> 68 to 72 centimenters(27-28 inch)</em> at the withers. According females standards 
-should be around<em> 63 to 68 centimenters(25-27 inchs).</em>This dog has a more square frame so the length should 
-equal the height. The length of head, neck and legs should be porportionate to the body.</p>
-</div>
-
-<strong>Weight</strong>
-<p id="Subtitle">The ideal weight for male dogs is around 88-99 pounds and for females the ideal weight is around 71-77 pounds.</p>
-
-<h2 class="b">Fun Fact: Dobermans were the first canine war heroes</h2>
-
-<strong>Colors</strong>
-<ul>
-<li>Black</li>
-<li>Blue</li>
-<li>Red</li>
-<li>Fawn</li>
-</ul>
-
-<strong>Characteristics</strong>
-<ol>
-<li>Alert</li>
-<li>Confident</li>
-<li>Loyal</li>
-<li>Energetic</li>
-<li>Fearless</li>
-<li>Obidient</li>
-<li>Intelligent</li>
-</ol>
-
-<style>
-table {
-    font-family:Arial, Helvetica, sans-serif;
-    border-collapse:collapse;
-    width: 100%;
-
-}
-
-tr:nth-child(even) {
-background-color: #dddddd;
-}
-</style>
-<h2>Puppy Feeding Chart</h2>
-<table>
-<tr>
-    <th>Age</th>
-    <th>Male</th>
-    <th>Female</th> 
-</tr>
-<tr>
-    <td><strong>2-3 months</strong></td>
-    <td>1 to 2.6 cups</td>
-    <td>.6 to 2.3 cups</td>
-</tr>
-<tr>
-<td><strong>4-5 months</strong></td>
-<td>3 to 3.8 cups</td>
-<td>1.5 to 4 cups</td>
-</tr>
-<tr>
-<td><strong>6-8 months</strong></td>
-<td>3 to 6.3 cups</td>
-<td>1.5 to 4 cups</td>
-</tr>
-<tr>
-<td><strong>9-11 months</strong></td>
-<td>4 to 7 cups</td>
-<td>2.5 to 5 cups</td>
-</tr>
-</table>
-
-<p><b><a href="https://www.akc.org/dog-breeds/doberman-pinscher/" target="_blank">Learn more about Dobermans</a></b></p>
-
-
-
-
-
-
-</body>
-  </html>
+   </html>
 
