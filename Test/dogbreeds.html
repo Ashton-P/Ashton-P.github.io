@@ -6,7 +6,7 @@
     <title>HTML webpage of dog breeds</title>
     <!--embedded style sheet (maya)-->
     <style>
-      /*using id span to add color to text (maya)*/
+      /*using id span to add color to text (maya)*/ /*Mark's comment: try not to use the a name that is the name of an element! so rename span to something else. Oh and I see that you've done this for table, img, and h2 also! rename those, too.*/
       #span{
         color:#FF4500;
       }
@@ -41,11 +41,11 @@
     <body>
 <!--div for corgi dog breed (maya)-->
 <div class="corgi">
-<center> <!-- Moved center tag (Ashton)-->
+<center> <!-- Moved center tag (Ashton)--><!--Mark's comment: delete this deprecated tag and use stylesheets to center instead.-->
 <!--header to name dog breed (maya)-->    
     <h2 id="h2">Pembroke Welsh Corgi</h2>
 <!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
-    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="img" width="50%"></a>
+    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="img" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
 <!--paragraph description of corgi (maya)-->   
     <p id="para">Corgis are <span id="span">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
         They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
@@ -86,13 +86,13 @@
         <td>Moderate daily exercise, long walks</td>
         </tr>
       </table>
-    </center>
+    </center><!--Mark's comment: for all of the center tags, delete them and do it with styles instead.-->
 </div>
-
+<!--Mark's comment: Each .html page should only have ONE html element, ONE head element, and ONE body element. Delete lines 92 and 94.-->
 <html>
     
     <body>
-    <style>
+    <style>/*Mark's comment: Put style blocks in the head element at the top of the page, but, actually, you should try to only have one style block, so merge this with the one up top. There may be some conflicts here as you're specifying styles for generic elements. Does everybody want their sections to be styled the same way?*/
         p.center {
             text-align: center;
             color: rgb(10, 78, 145);
@@ -157,7 +157,7 @@ img {
     
         
        <div class="center"><h2>Dobermans
-            <link rel="stylesheet" href="Style.css">
+            <link rel="stylesheet" href="Style.css"><!--Mark's comment: put link tags into the head tag up top. But also, there does not appear to be a file named Style.css within your folder so this links to nothing.-->
         </h2></div>
         <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102805/Doberman-Pinscher_Featured-Image-1024x615.jpg" alt="Big dog" title="Cute Doggo!" width="50%">
 <p class="center"><strong>The Dobermann or also known as the Doberman Pinscher is a medium to large sized dog that was discovered 
@@ -234,7 +234,7 @@ equal the height. The length of head, neck and legs should be porportionate to t
 
 
 
-    <body>
+    <body><!--Mark's comment: See previous comment about html, head, and body tags. Delete lines 237-240.-->
         
     </body>
 </html>
@@ -244,7 +244,7 @@ equal the height. The length of head, neck and legs should be porportionate to t
  <!--div for pug dog breed (Alex)-->
  <div class="Pug">
   <style>
-<!--.Pug allows for both the image and text to be in a nice and organized manner in a similar and coehsive manner to Maya-->
+<!--.Pug allows for both the image and text to be in a nice and organized manner in a similar and coehsive manner to Maya-->/*Mark's comment: This is confusing, I know, but comments within a style block need to be denoted with a slashasterisk not lessthansignexclamationpointdashdash.*/
     .Pug {
       background-color: beige;
       margin: 70px;
