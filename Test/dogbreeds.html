@@ -7,7 +7,7 @@
     <!--embedded style sheet (maya)-->
     <style>
       /*using id span to add color to text (maya)*/ /*Mark's comment: try not to use the a name that is the name of an element! so rename span to something else. Oh and I see that you've done this for table, img, and h2 also! rename those, too.*/
-      #span{
+      #affectionate{
         color:#FF4500;
       }
       /*adding background color, margin and padding values, and font style to corgi div (maya)*/
@@ -18,13 +18,14 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
       /*adding font-style, border properties, and alignment to table (maya)*/
-      #table{
+      #care{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border: solid black 2px;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
       }
       /*creating opacity effect when hovering image (maya)*/
-      #img:hover{
+      #photo:hover{
         opacity:70%;
       }
       /*adjusting margin for paragraph (maya)*/
@@ -32,8 +33,9 @@
         margin:50px;
       }
       /*adjusting padding for title (maya)*/
-      #h2{
+      #corg{
         padding:20px;
+        text-align: center;
       }
 
     </style>
@@ -41,15 +43,15 @@
     <body>
 <!--div for corgi dog breed (maya)-->
 <div class="corgi">
-<center> <!-- Moved center tag (Ashton)--><!--Mark's comment: delete this deprecated tag and use stylesheets to center instead.-->
+ <!-- Moved center tag (Ashton)--><!--Mark's comment: delete this deprecated tag and use stylesheets to center instead.-->
 <!--header to name dog breed (maya)-->    
-    <h2 id="h2">Pembroke Welsh Corgi</h2>
+    <h2 id="corg">Pembroke Welsh Corgi</h2>
 <!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
-    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="img" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
+    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="photo" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
 <!--paragraph description of corgi (maya)-->   
-    <p id="para">Corgis are <span id="span">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
+    <p id="para">Corgis are <span id="affectionate">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
         They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
-        tan, and white. </p> </center>
+        tan, and white. </p> 
 <!--list of traits, source:https://www.akc.org/dog-breeds/pembroke-welsh-corgi/ (maya)-->
     <ol>
         <li><strong>Family life</strong></li>
@@ -71,10 +73,10 @@
             <li><em>Very protective</em></li>
         </ul>
     </ol>
-    <center>
+ 
     <!--table of info on how to care for corgis (maya)-->
     <h2>Corgi Care</h2>
-    <table id="table">
+    <table id="care">
         <tr>
           <th>Health</th>
           <th>Grooming</th>
@@ -86,10 +88,9 @@
         <td>Moderate daily exercise, long walks</td>
         </tr>
       </table>
-    </center><!--Mark's comment: for all of the center tags, delete them and do it with styles instead.-->
+<!--Mark's comment: for all of the center tags, delete them and do it with styles instead.-->
 </div>
 <!--Mark's comment: Each .html page should only have ONE html element, ONE head element, and ONE body element. Delete lines 92 and 94.-->
-<html>
     
     <body>
     <style>/*Mark's comment: Put style blocks in the head element at the top of the page, but, actually, you should try to only have one style block, so merge this with the one up top. There may be some conflicts here as you're specifying styles for generic elements. Does everybody want their sections to be styled the same way?*/
@@ -237,7 +238,6 @@ equal the height. The length of head, neck and legs should be porportionate to t
     <body><!--Mark's comment: See previous comment about html, head, and body tags. Delete lines 237-240.-->
         
     </body>
-</html>
 
 
     
@@ -324,7 +324,6 @@ equal the height. The length of head, neck and legs should be porportionate to t
       <li><em>Somewhat protective</em></li>
     </ul>
   </ol>
-  <center>
     <!--table of info on how to care for pugs and a hyperlink on where to find the original information(Alex)-->
     <h2>Other facts:</h2>
     <!--the id allows for the table to use the CSS styling that was coded above-->
@@ -351,7 +350,6 @@ equal the height. The length of head, neck and legs should be porportionate to t
         <td>Moderate daily exercise</td>
       </tr>
     </table>
-  </center>
 </div>
 <a href="https://www.akc.org/dog-breeds/pug/">Original Source of Facts!</a>
 <!--Alex's comment: url link fixed-->
@@ -389,14 +387,12 @@ equal the height. The length of head, neck and legs should be porportionate to t
     </style>
     <!--A divider for the German Shepherd section (Ashton P.)-->
   <div class="GermanShepherd">
-    <center>
     <!--Header for the German Shepherd section (Ashton P.)-->
     <h2 id="h2">German Shepherd</h2>
     <!--Image of a german shepherd with a new measurement and a title, with alt text in case the image doesn't load, also including a source for the information if you click on the image (Ashton P.)-->
     <a href="https://www.akc.org/dog-breeds/german-shepherd-dog/"><img src="https://i.natgeofe.com/n/187b3223-0b45-4aa5-ae5c-24793dd2d6cb/01-german-shepherd-coronavirus-bwtkdt_square.jpg" alt="german shepherd" title="German Shepherd" id="image" width="50%"></a>
     <!--Little description for the German Shepherd breed (Ashton P.)-->
     <p id ="p">German Shepherds are <span id="span">Smart, Loyal, and Courageous</span> dogs. They are all purpose workers that will protect the family it belongs to. They can stand as high as 26 inches tall and can come in many different fur colors, the most common being black and tan.</p>
-    </center>
       <!--Main bulletin points about a German Shepherd (Ashton P.)-->
       <ol>
         <li><strong>Family life</strong></li>
@@ -428,7 +424,6 @@ equal the height. The length of head, neck and legs should be porportionate to t
       </ol>
         
       <!--A table describing useful health care information about a German Shepherd (Ashton P.)-->
-      <center>
         <h2>German Shepherd Care</h2>
         <table id ="table">
           <tr>
@@ -442,7 +437,6 @@ equal the height. The length of head, neck and legs should be porportionate to t
             <td>Daily long walks, frequent playtime</td>
           </tr>
         </table>
-      </center>
   </body>
 
    </html>
