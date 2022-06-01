@@ -7,6 +7,7 @@
     <!--embedded style sheet (maya)-->
     <style>
       /*using id span to add color to text (maya)*/ /*Mark's comment: try not to use the a name that is the name of an element! so rename span to something else. Oh and I see that you've done this for table, img, and h2 also! rename those, too.*/
+      /*renamed tags so that they are not the name of element (maya) */
       #affectionate{
         color:#FF4500;
       }
@@ -37,61 +38,7 @@
         padding:20px;
         text-align: center;
       }
-
-    </style>
-    </head>  
-    <body>
-<!--div for corgi dog breed (maya)-->
-<div class="corgi">
-<!--header to name dog breed (maya)-->    
-    <h2 id="corg">Pembroke Welsh Corgi</h2>
-<!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
-    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgi" id="photo" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
-<!--paragraph description of corgi (maya)-->   
-    <p id="para">Corgis are <span id="affectionate">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
-        They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
-        tan, and white. </p> 
-<!--list of traits, source:https://www.akc.org/dog-breeds/pembroke-welsh-corgi/ (maya)-->
-    <ol>
-        <li><strong>Family life</strong></li>
-        <ul>
-            <li><em>Good with children</em></li>
-            <li><em>Affectionate with family</em></li>
-            <li><em>Good with other dogs</em></li>
-        </ul>
-        <li><strong>Physical</strong></li>
-        <ul>
-            <li><em>Shedding level high</em></li>
-            <li><em>Low drooling level</em></li>
-            <li><em>Coat grooming moderate</em></li>
-        </ul>
-        <li><strong>Social</strong></li>
-        <ul>
-            <li><em>Open to strangers</em></li>
-            <li><em>Very playful</em></li>
-            <li><em>Very protective</em></li>
-        </ul>
-    </ol>
- 
-    <!--table of info on how to care for corgis (maya)-->
-    <h2>Corgi Care</h2>
-    <table id="care">
-        <tr>
-          <th>Health</th>
-          <th>Grooming</th>
-          <th>Exercise</th>
-        </tr>
-        <tr>
-          <td>Hip evaluation, ophthalmologist evaluation</td>
-          <td>Daily combover, regular nail trimming</td>
-        <td>Moderate daily exercise, long walks</td>
-        </tr>
-      </table>
-</div>
-    
-    <body>
-    <style>/*Mark's comment: Put style blocks in the head element at the top of the page, but, actually, you should try to only have one style block, so merge this with the one up top. There may be some conflicts here as you're specifying styles for generic elements. Does everybody want their sections to be styled the same way?*/
-        p.center {
+    p.center {
             text-align: center;
             color: rgb(10, 78, 145);
         }
@@ -147,11 +94,66 @@ img {
   text-align: left;
   background-color: #04AA6D;
   color: white;
-}
-        </style> 
+        }
+    </style>
+    </head>  
+    <body>
+<!--div for corgi dog breed (maya)-->
+<div class="corgi">
+<!--header to name dog breed (maya)-->    
+    <h2 id="corg">Pembroke Welsh Corgi</h2>
+<!--img of corgi + anchor tag linking to site with info on corgis (maya)-->    
+    <!--removed id from img tag (maya)-->
+    <a href="https://www.akc.org/dog-breeds/pembroke-welsh-corgi/"><img src="https://www.thefarmersdog.com/digest/wp-content/uploads/2021/12/corgi-top-1400x871.jpg" alt="corgi" title="corgiphoto" width="50%"></a><!--Mark's comment: you have an id attribute in the img element, but no corresponding #img style. There is a .img style which specifies a class not id, but also don't name classes and ids after tag names. Did you all read the first few entries for CSS on w3schools? You should. This one in particular may help clarify: https://www.w3schools.com/css/css_selectors.asp-->
+<!--paragraph description of corgi (maya)-->   
+    <p id="para">Corgis are <span id="affectionate">affectionate, cute, and friendly</span> dogs that have strong athletic capabilities. 
+        They weigh 27 to 30 pounds and come in a range of colors from red, sable, fawn, black, 
+        tan, and white. </p> 
+<!--list of traits, source:https://www.akc.org/dog-breeds/pembroke-welsh-corgi/ (maya)-->
+    <ol>
+        <li><strong>Family life</strong></li>
+        <ul>
+            <li><em>Good with children</em></li>
+            <li><em>Affectionate with family</em></li>
+            <li><em>Good with other dogs</em></li>
+        </ul>
+        <li><strong>Physical</strong></li>
+        <ul>
+            <li><em>Shedding level high</em></li>
+            <li><em>Low drooling level</em></li>
+            <li><em>Coat grooming moderate</em></li>
+        </ul>
+        <li><strong>Social</strong></li>
+        <ul>
+            <li><em>Open to strangers</em></li>
+            <li><em>Very playful</em></li>
+            <li><em>Very protective</em></li>
+        </ul>
+    </ol>
+ 
+    <!--table of info on how to care for corgis (maya)-->
+    <h2>Corgi Care</h2>
+    <table id="care">
+        <tr>
+          <th>Health</th>
+          <th>Grooming</th>
+          <th>Exercise</th>
+        </tr>
+        <tr>
+          <td>Hip evaluation, ophthalmologist evaluation</td>
+          <td>Daily combover, regular nail trimming</td>
+        <td>Moderate daily exercise, long walks</td>
+        </tr>
+      </table>
+</div>
+    
+    <body>
+<!--/*Mark's comment: Put style blocks in the head element at the top of the page, but, actually, you should try to only have one style block, so merge this with the one up top. There may be some conflicts here as you're specifying styles for generic elements. Does everybody want their sections to be styled the same way?*/-->
+<!--moved style into one block at the top (maya)-->    
   
        <div class="center"><h2>Dobermans
-            <link rel="stylesheet" href="Style.css"><!--Mark's comment: put link tags into the head tag up top. But also, there does not appear to be a file named Style.css within your folder so this links to nothing.-->
+        <!--Mark's comment: put link tags into the head tag up top. But also, there does not appear to be a file named Style.css within your folder so this links to nothing.-->
+           <!--removed stylesheet link (maya)-->
         </h2></div>
         <img src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102805/Doberman-Pinscher_Featured-Image-1024x615.jpg" alt="Big dog" title="Cute Doggo!" width="50%">
 <p class="center"><strong>The Dobermann or also known as the Doberman Pinscher is a medium to large sized dog that was discovered 
